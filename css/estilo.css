@@ -25,6 +25,7 @@
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
+    text-decoration: underline;
 }
 
 .card {
@@ -158,6 +159,17 @@ footer {
     margin-right: 35px;
 }
 
+.h1SobreNosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-decoration: underline;
+    color: white;
+    font-size: 51px;
+}
+
 .imagenFondo {
     background-image: url(../img/imagen-para-fondo.jpg);
     background-repeat: no-repeat;
@@ -168,6 +180,70 @@ footer {
 .imagenFondo p {
     color: white;
     font-size: 15px;
+}
+
+.h1Combos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-decoration: underline;
+}
+
+.h1Catalogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-decoration: underline;
+}
+
+.btn {
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em;
+    border: 3px solid black;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: black;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+.btn:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: black;
+    z-index: -1;
+}
+
+.btn:hover, .btn:focus {
+    color: white;
+}
+
+.btn:hover:before, .btn:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.btn:active {
+    transform: scale(0.9);
 }
 
 @media screen and (max-width: 980px) {
