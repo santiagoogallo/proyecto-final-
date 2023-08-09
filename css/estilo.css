@@ -279,14 +279,16 @@ footer {
 @media screen and (max-width: 1200px) {
     .contenedorDestacado {
         display: grid;
+        place-items: center;
         grid-template-rows: auto auto; 
-        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-columns: 1fr 1fr; 
     }
 }
 
 @media screen and (max-width: 850px) {
     .contenedorDestacado {
         display: grid;
+        place-items: center;
         grid-template-rows: auto auto ; 
         grid-template-columns: 1fr 1fr; 
     }
@@ -295,12 +297,11 @@ footer {
 @media screen and (max-width: 650px) {
     .contenedorDestacado {
         display: grid;
+        place-items: center;
         grid-template-rows: auto auto auto auto; 
         grid-template-columns: 1fr; 
     }
 }
-
-
 
 
 @media screen and (max-width: 980px) {
