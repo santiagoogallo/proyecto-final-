@@ -29,27 +29,54 @@
 }
 
 .card {
-    width: 150px;
-    right: 50px;
-    left: 50px;   
+    width: 250px;
+    margin: 10px;
+}
+
+.cardImg {
+    height: 300px;
+    object-fit: cover;
 }
 
 .contenedorImg {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 100px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 .contenedorDestacado {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-right: 100px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 1400px;
+    margin: 10px auto;
+}
+
+.contenedorBanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+}
+
+.contenedorDiv1 {
+    margin: 10px auto;
+
+}
+
+.contenedorDiv2 {
+    margin: 10px auto;
+}
+
+.contenedorDiv3 {
+    margin: 10px auto;
+}
+
+.divImg {
+    width: 50px;
 }
 
 .contactanos {
@@ -57,11 +84,13 @@
     justify-content: center;
     align-items: center;
 }
+
 .contact-form {
     background-color: #A57A17;
     padding: 20px;
     border-radius: 10px;
     margin: 100px;
+    
     
 }
 
@@ -124,6 +153,7 @@
 
 .contenedorSeccion {
     display: flex;
+    justify-content: center;
 }
 
 .contenedorMapa {
@@ -246,6 +276,33 @@ footer {
     transform: scale(0.9);
 }
 
+@media screen and (max-width: 1200px) {
+    .contenedorDestacado {
+        display: grid;
+        grid-template-rows: auto auto; 
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .contenedorDestacado {
+        display: grid;
+        grid-template-rows: auto auto ; 
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .contenedorDestacado {
+        display: grid;
+        grid-template-rows: auto auto auto auto; 
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+
+
 @media screen and (max-width: 980px) {
     .contenedorSeccion {
         display: flex;
@@ -253,13 +310,6 @@ footer {
     }
 }
 
-@media screen and (max-width: 820px) {
-    .contenedorDestacado {
-        display: grid;
-        grid-template-rows: auto auto; 
-        grid-template-columns: 1fr 1fr; 
-    }
-}
 
 @media screen and (max-width: 1087px) {
     .contenedorImg {
