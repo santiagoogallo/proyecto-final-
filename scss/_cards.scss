@@ -1,0 +1,101 @@
+main {
+	.destacado {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		text-decoration: underline;
+	}
+	.contenedorDestacado {
+		display: flex;
+		justify-content: center;
+		width: 900px;
+		margin: 10px auto;
+	}
+    .contenedorDestacado {
+        .card {
+            width: 250px;
+            margin: 10px;
+            border: 3px solid black;
+        }
+    }
+    .card {
+        .cardImg {
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+    .btn {
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        display: flex;
+        text-align: center;
+        font-weight: bold;
+        padding: 0.7em;
+        border: 3px solid black;
+        border-radius: 2px;
+        position: relative;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+        color: black;
+        text-decoration: none;
+        transition: 0.3s ease all;
+        z-index: 1;
+    }
+    .btn:before {
+        transition: 0.5s all ease;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		right: 50%;
+		bottom: 0;
+		opacity: 0;
+		content: '';
+		background-color: black;
+		z-index: -1;
+    }
+    .btn:hover, .btn:focus {
+        color: white;
+    }
+    .btn:hover:before, .btn:focus:before {
+        transition: 0.5s all ease;
+        left: 0;
+        right: 0;
+        opacity: 1;
+    }
+    .btn:active {
+        transform: scale(0.9);
+    }
+}
+
+main {
+	.h1Catalogo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 20px;
+		margin-bottom: 25px;
+		text-decoration: underline;
+	}
+	.contenedorImg {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 10px;
+		.card {
+			width: 250px;
+			margin: 10px;
+			border: 3px solid black;
+		}
+	}
+}
+
+.h1Combos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-decoration: underline;
+}
