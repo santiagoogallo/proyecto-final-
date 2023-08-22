@@ -7,9 +7,11 @@ header .container-fluid {
 header .container-fluid .navbar-brand {
   display: flex;
   justify-content: left;
-  padding-left: 80px;
   padding-top: 10px;
   height: 50px;
+}
+header .container-fluid .navbar-nav {
+  text-align: right;
 }
 
 .contenedorBanner {
@@ -18,7 +20,7 @@ header .container-fluid .navbar-brand {
   justify-content: center;
   flex-direction: row;
   background-color: black;
-  color: white;
+  color: #fff;
 }
 .contenedorBanner .contenedorDiv1 {
   margin: 10px auto;
@@ -76,6 +78,7 @@ header .container-fluid .navbar-brand {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background-image: url(https://media.istockphoto.com/id/1257563298/es/foto/ropa-de-moda-en-un-estante-en-un-fondo-ligero-en-interiores-lugar-para-el-texto.jpg?s=612x612&w=0&k=20&c=RRuUXGU13Dd0Zjxx01tJ3L__jjPFB7OUiPC7tS8rhlM=);
 }
 .banner .conocenos a {
   display: flex;
@@ -83,36 +86,77 @@ header .container-fluid .navbar-brand {
   align-items: center;
   color: #fff;
   text-decoration: none;
-  background: #3088e0;
+  background: black;
   padding: 16px 37px;
   border-radius: 50px;
 }
 
-@keyframes banner {
-  0%, 50% {
-    background-image: url(../img/imagen-inicio-fondo.jpg);
-  }
-  55%, 100% {
-    background-image: url(../img/img-banner-catalogo.jpg);
-  }
-}
 .info {
   z-index: 1;
   width: 100%;
   max-width: 550px;
   text-align: center;
+  font-weight: bold;
 }
 
 .info h1 {
-  color: #fff;
+  color: black;
   font-size: 45px;
   margin-bottom: 20px;
   letter-spacing: 1px;
 }
 .info p {
-  color: white;
+  color: black;
   line-height: 1.7;
   margin-bottom: 30px;
+}
+
+.contenedorFondo {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.contenedorFondo .imagenFondo {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.contenedorFondo .textoFondo {
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  color: #fff;
+  font-size: medium;
+  font-size: 35px;
+}
+
+.contenedorCombos {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url("https://img.freepik.com/vector-premium/cliente-mujer-comprando-nuevo-bolso-mostrador-caja-moda-tienda-ropa-femenina-centro-comercial-moderno-boutique-interior-banner-horizontal_48369-28737.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contenedorCombos .hCombos {
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 main .destacado {
@@ -168,7 +212,7 @@ main .btn:before {
   z-index: -1;
 }
 main .btn:hover, main .btn:focus {
-  color: white;
+  color: #fff;
 }
 main .btn:hover:before, main .btn:focus:before {
   transition: 0.5s all ease;
@@ -206,6 +250,10 @@ main .contenedorImg .card {
   align-items: center;
   margin-top: 20px;
   margin-bottom: 25px;
+  text-decoration: underline;
+}
+
+.card-body h5 {
   text-decoration: underline;
 }
 
@@ -381,13 +429,58 @@ main .contenedorImg .card {
     width: 10px;
   }
 }
+@media screen and (max-width: 529px) {
+  main footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contenedorBanner {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 815px) {
+  .contenedorFondo .textoFondo {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .contenedorFondo .textoFondo {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .contenedorForm {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 694px) {
+  .contenedorForm {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 536px) {
+  .contenedorForm {
+    max-width: 250px;
+  }
+}
+@media screen and (max-width: 483px) {
+  .contenedorForm {
+    max-width: 150px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .contenedorForm {
+    max-width: 100px;
+  }
+}
 footer {
   background-color: #A57A17;
 }
-footer .contactanos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+footer .texto {
+  display: block;
 }
 footer .redesSociales {
   display: flex;
@@ -398,13 +491,11 @@ footer .redesSociales img {
   width: 55px;
   height: 55px;
   padding: 10px;
-  margin-right: 50px;
 }
 footer .encontranos {
   display: flex;
   justify-content: end;
   align-items: end;
-  margin-right: 35px;
 }
 
 /*# sourceMappingURL=estilo.css.map */

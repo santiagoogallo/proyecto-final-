@@ -3,14 +3,16 @@ header {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-color: #A57A17;
+		background-color: $color-fondo;
 
         .navbar-brand {
             display: flex;
             justify-content: left;
-            padding-left: 80px;
             padding-top: 10px;
             height: 50px;
+        }
+        .navbar-nav {
+            text-align: right;
         }
     }
 }

@@ -17,7 +17,7 @@ main {
         .card {
             width: 250px;
             margin: 10px;
-            border: 3px solid black;
+            border: 3px solid $color-tit;
         }
     }
     .card {
@@ -34,11 +34,11 @@ main {
         text-align: center;
         font-weight: bold;
         padding: 0.7em;
-        border: 3px solid black;
+        border: 3px solid $color-tit;
         border-radius: 2px;
         position: relative;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-        color: black;
+        color: $color-tit;
         text-decoration: none;
         transition: 0.3s ease all;
         z-index: 1;
@@ -52,11 +52,11 @@ main {
 		bottom: 0;
 		opacity: 0;
 		content: '';
-		background-color: black;
+		background-color: $color-tit;
 		z-index: -1;
     }
     .btn:hover, .btn:focus {
-        color: white;
+        color: $color-font;
     }
     .btn:hover:before, .btn:focus:before {
         transition: 0.5s all ease;
@@ -86,7 +86,7 @@ main {
 		.card {
 			width: 250px;
 			margin: 10px;
-			border: 3px solid black;
+			border: 3px solid $color-tit;
 		}
 	}
 }
@@ -98,4 +98,10 @@ main {
     margin-top: 20px;
     margin-bottom: 25px;
     text-decoration: underline;
+}
+
+.card-body {
+    h5 {
+        text-decoration: underline;
+    }
 }

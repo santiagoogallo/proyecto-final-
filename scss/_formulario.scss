@@ -1,15 +1,15 @@
 .contact-form {
-	background-color: #A57A17;
+	background-color: $color-fondo;
 	padding: 20px;
 	border-radius: 10px;
 	margin: 100px;
 	label {
-		color: black;
+		color: $color-tit;
 		margin-bottom: 10px;
 	}
 	.heading {
 		font-size: 24px;
-		color: black;
+		color: $color-tit;
 		margin-bottom: 12px;
 		font-weight: bold;
 		display: block;
@@ -19,8 +19,8 @@
 		flex-direction: column;
 	}
 	button[type="submit"] {
-		background-color: black;
-		color: #fff;
+		background-color: $color-tit;
+		color: $color-font;
 		border: none;
 		border-radius: 5px;
 		padding: 10px 20px;
@@ -46,7 +46,7 @@
 }
 .contact-form input:focus, .contact-form textarea:focus {
 	outline: none;
-	box-shadow: 0 0 5px black;
+	box-shadow: 0 0 5px $color-tit;
 	transform: scale(1.05);
 	transition: transform 0.3s ease-in-out;
 }

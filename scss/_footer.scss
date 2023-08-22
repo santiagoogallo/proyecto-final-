@@ -1,9 +1,7 @@
 footer {
-	background-color: #A57A17;
-	.contactanos {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	background-color: $color-fondo;
+	.texto {
+		display: block;
 	}
 	.redesSociales {
 		display: flex;
@@ -13,13 +11,11 @@ footer {
 			width: 55px;
 			height: 55px;
 			padding: 10px;
-			margin-right: 50px;
 		}
 	}
 	.encontranos {
 		display: flex;
 		justify-content: end;
 		align-items: end;
-		margin-right: 35px;
 	}
 }
