@@ -15,7 +15,7 @@ main {
 	}
     .contenedorDestacado {
         .card {
-            width: 250px;
+            width: 350px;
             margin: 10px;
             border: 3px solid $color-tit;
         }
@@ -105,3 +105,74 @@ main {
         text-decoration: underline;
     }
 }
+
+.imagenSecciones {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.imagenSeccion {
+    margin-top: 15px;
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.imagenSeccionCaja {
+    margin-top: 40px;
+    position: relative;
+    display: inline-block;
+    border: 3px solid $color-tit;
+    border-radius: 15px;
+}
+
+.imagenSeccionBtn {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white; 
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.imagenBtn {
+    position: relative;
+}
+
+.imagenSeccionBtn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.tituloSobreNosotros {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 10px;
+    border-radius: 10px; 
+}
+
+.parrafoSobreNosotros {
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+}
+

@@ -70,7 +70,7 @@ header .container-fluid .navbar-nav {
 
 .banner {
   width: 100%;
-  height: 600px;
+  height: 100%;
   animation: banner 10s infinite linear alternate;
   background-size: 100% 100%;
   position: relative;
@@ -78,7 +78,7 @@ header .container-fluid .navbar-nav {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-image: url(https://media.istockphoto.com/id/1257563298/es/foto/ropa-de-moda-en-un-estante-en-un-fondo-ligero-en-interiores-lugar-para-el-texto.jpg?s=612x612&w=0&k=20&c=RRuUXGU13Dd0Zjxx01tJ3L__jjPFB7OUiPC7tS8rhlM=);
+  background-image: url(https://img.freepik.com/foto-gratis/tablas-madera-tienda-ropa-borrosa-fondo_1253-47.jpg);
 }
 .banner .conocenos a {
   display: flex;
@@ -174,7 +174,7 @@ main .contenedorDestacado {
   margin: 10px auto;
 }
 main .contenedorDestacado .card {
-  width: 250px;
+  width: 350px;
   margin: 10px;
   border: 3px solid black;
 }
@@ -255,6 +255,76 @@ main .contenedorImg .card {
 
 .card-body h5 {
   text-decoration: underline;
+}
+
+.imagenSecciones {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.imagenSeccion {
+  margin-top: 15px;
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.imagenSeccionCaja {
+  margin-top: 40px;
+  position: relative;
+  display: inline-block;
+  border: 3px solid black;
+  border-radius: 15px;
+}
+
+.imagenSeccionBtn {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.imagenBtn {
+  position: relative;
+}
+
+.imagenSeccionBtn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.tituloSobreNosotros {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.parrafoSobreNosotros {
+  position: absolute;
+  text-align: center;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .contact-form {
