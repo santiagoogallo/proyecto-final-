@@ -166,35 +166,61 @@
     }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 1090px) {
     .contenedorForm {
-        max-width: 500px;
+        width: 100%; 
+        margin-right: 0; 
+        }
+
+    .contenedorSeccion {
+        flex-direction: column; 
+    }
+
+    .contenedorMapa {
+        width: 100%; 
+        height: 300px;
+        max-width: 100%;
+        overflow: hidden;
+        margin: auto;
     }
 }
 
-@media screen and (max-width: 694px) {
-    .contenedorForm {
-        max-width: 300px;
+
+@media screen and (max-width: 1246px) {
+    .imagenSeccionCaja {
+        margin-top: 50px;
     }
 }
 
-@media screen and (max-width: 536px) {
-    .contenedorForm {
-        max-width: 250px;
+@media screen and (max-width: 1039px) {
+    .imagenSeccionCaja {
+        margin-top: 100px;
     }
 }
 
-@media screen and (max-width: 483px) {
-    .contenedorForm {
-        max-width: 150px;
+@media screen and (max-width: 846px) {
+    .imagenSecciones {
+        grid-template-columns: 1fr;
+        margin: 0;
     }
 }
 
-@media screen and (max-width: 380px) {
-    .contenedorForm {
-        max-width: 100px;
+@media screen and (max-width: 846px) {
+    .parrafoSobreNosotros {
+        display: none;
     }
 }
+
+@media screen and (max-width: 403px) {
+    .imagenSeccion {
+        width: 300px;
+    }
+}
+
+
+
+
+
 
 
 
