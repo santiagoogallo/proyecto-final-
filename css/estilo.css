@@ -170,11 +170,11 @@ main .destacado {
 main .contenedorDestacado {
   display: flex;
   justify-content: center;
-  width: 900px;
+  width: 800px;
   margin: 10px auto;
 }
 main .contenedorDestacado .card {
-  width: 350px;
+  width: 250px;
   margin: 10px;
   border: 3px solid black;
 }
@@ -400,7 +400,6 @@ main .contenedorImg .card {
 
 @media screen and (max-width: 1200px) {
   main .contenedorDestacado {
-    display: grid;
     place-items: center;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -410,17 +409,17 @@ main .contenedorImg .card {
   main .contenedorDestacado {
     display: grid;
     place-items: center;
-    width: 200px;
+    width: 150px;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 729px) {
   main .contenedorDestacado {
-    display: grid;
-    place-items: center;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 980px) {
@@ -523,7 +522,7 @@ main .contenedorImg .card {
 }
 @media screen and (max-width: 740px) {
   .contenedorForm {
-    width: 450px;
+    max-width: 500px;
   }
 }
 @media screen and (max-width: 694px) {

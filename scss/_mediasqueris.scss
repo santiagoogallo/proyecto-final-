@@ -1,7 +1,6 @@
 @media screen and (max-width: 1200px) {
     main { 
         .contenedorDestacado {
-            display: grid;
             place-items: center;
             grid-template-rows: 1fr 1fr; 
             grid-template-columns: 1fr 1fr 1fr; 
@@ -14,20 +13,20 @@
         .contenedorDestacado {
             display: grid;
             place-items: center;
-            width: 200px;
+            width: 150px;
             grid-template-rows: 1fr 1fr ; 
             grid-template-columns: 1fr 1fr; 
         }
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 729px) {
     main {
         .contenedorDestacado {
-            display: grid;
-            place-items: center;
-            grid-template-rows: 1fr 1fr 1fr 1fr; 
-            grid-template-columns: 1fr; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
     }
 }
@@ -169,7 +168,7 @@
 
 @media screen and (max-width: 740px) {
     .contenedorForm {
-        width: 450px;
+        max-width: 500px;
     }
 }
 
