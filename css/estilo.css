@@ -180,6 +180,29 @@ header .container-fluid .navbar-nav {
   height: 100%;
 }
 
+.contenedorCatalogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.contenedorCatalogo .imgBannerCatalogo {
+  width: 200px;
+  object-fit: cover;
+  border: 3px solid black;
+  border-radius: 5px;
+  margin: 2% auto;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.contenedorCatalogo .parrafoCatalogo {
+  text-align: center;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  border-right: 4px solid;
+}
+
 main .destacado {
   display: flex;
   justify-content: center;
@@ -256,17 +279,27 @@ main .h1Catalogo {
   margin-top: 20px;
   margin-bottom: 25px;
   transition: transform 0.3s;
+  background-color: black;
+  color: #fff;
 }
-main .contenedorImg {
+main .card {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-main .contenedorImg .card {
   width: 250px;
   margin: 10px;
   border: 3px solid black;
   margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: auto;
+}
+
+.contenedorImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1 0 calc(25% - 10px);
 }
 
 .h1Catalogo:hover {
@@ -492,28 +525,29 @@ main .contenedorImg .card {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   main .contenedorImg {
     display: grid;
-    place-items: center;
-    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
   }
 }
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 890px) {
   main .contenedorImg {
     display: grid;
     place-items: center;
-    grid-template-rows: auto auto auto;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 729px) {
   main .contenedorImg {
     display: grid;
     place-items: center;
-    grid-template-rows: auto auto auto auto;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   }
 }
 @media screen and (max-width: 1030px) {
@@ -624,6 +658,14 @@ main .contenedorImg .card {
 @media screen and (max-width: 403px) {
   .imagenSeccion {
     width: 300px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .contenedorCatalogo .imgBannerCatalogo {
+    display: none;
+  }
+  .contenedorCatalogo .parrafoCatalogo {
+    margin-left: 20px;
   }
 }
 footer {

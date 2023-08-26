@@ -41,39 +41,40 @@
     }
 }
 
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
     main { 
         .contenedorImg {
             display: grid;
-            place-items: center;
-            grid-template-rows: auto auto; 
+            justify-items: center;
+            align-items: center;
             grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
         }
     }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 890px) {
     main { 
         .contenedorImg {
             display: grid;
             place-items: center;
-            grid-template-rows: auto auto auto; 
             grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
         }
     }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 729px) {
     main { 
         .contenedorImg {
             display: grid;
             place-items: center;
-            grid-template-rows: auto auto auto auto; 
             grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         }
     }
 }
+
 
 @media screen and (max-width: 1030px) { 
         .contenedorStickers {
@@ -214,6 +215,17 @@
 @media screen and (max-width: 403px) {
     .imagenSeccion {
         width: 300px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .contenedorCatalogo {
+        .imgBannerCatalogo {
+            display: none;
+        }
+        .parrafoCatalogo {
+            margin-left: 20px;
+        }
     }
 }
 
