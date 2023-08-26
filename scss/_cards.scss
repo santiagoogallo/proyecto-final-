@@ -3,13 +3,11 @@ main {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-top: 10px;
 		margin-bottom: 10px;
 	}
 	.contenedorDestacado {
 		display: flex;
 		justify-content: center;
-		width: 800px;
 		margin: 10px auto;
 	}
     .contenedorDestacado {
@@ -17,7 +15,8 @@ main {
             width: 250px;
             margin: 10px;
             border: 3px solid $color-tit;
-            transition: transform 0.3s;
+            
+            margin: 15px;
         }
     }
     .card {
@@ -27,6 +26,9 @@ main {
         }
     }
 
+    .card {
+        transition: transform 0.3s;
+    }
     .card:hover {
         transform: scale(1.1); 
     }
