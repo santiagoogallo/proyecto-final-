@@ -2,40 +2,38 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-direction: row;
 	background-color: $color-tit;
 	color: $color-font;
+	.divImg {
+		width: 50px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
 	.contenedorDiv1 {
-		margin: 10px auto;
-		display: inline;
-		.divImg {
-			width: 50px;
-			display: inline-block;
-			vertical-align: middle;
-	
-		}
+		margin: 10px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
 	}
 	.contenedorDiv2 {
-		margin: 10px auto;
-		display: inline;
-		.divImg {
-			width: 50px;
-			display: inline-block;
-			vertical-align: middle;
-	
-		}
+		margin: 10px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
 	}
 	.contenedorDiv3 {
-		margin: 10px auto;
-		display: inline;
-		.divImg {
-			width: 50px;
-			display: inline-block;
-			vertical-align: middle;
-	
-		}
+		margin: 10px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
 	}
 }
+
+.parrafoDiv1 {
+	text-align: center;
+	margin: 0;
+}
+
 
 .contenedorStickers {
 	display: flex;
