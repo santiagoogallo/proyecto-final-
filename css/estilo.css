@@ -302,6 +302,10 @@ main .card {
   flex: 1 0 calc(25% - 10px);
 }
 
+.h1Catalogo {
+  font-size: 35px;
+}
+
 .h1Catalogo:hover {
   transform: scale(1.1);
 }
@@ -422,6 +426,146 @@ main .card {
   background: rgba(255, 255, 255, 0.8);
   padding: 10px;
   border-radius: 10px;
+}
+
+.h1Artistas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.parrafoArtistas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 0;
+}
+
+.contenedorPrincipal {
+  display: flex;
+  align-items: center;
+}
+.contenedorPrincipal .contenedorImgModelo {
+  flex: 1;
+}
+.contenedorPrincipal .imgModelo {
+  border-radius: 10px;
+  margin-left: 30px;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+.contenedorPrincipal .contenedorInfo {
+  text-align: center;
+  margin-right: 200px;
+}
+
+.contenedorInfo h4,
+.contenedorInfo p,
+.contenedorInfo button {
+  margin: 5px 0;
+}
+
+.contenedorInfo p {
+  align-items: center;
+  text-align: center;
+  font-size: 60px;
+}
+.contenedorInfo h4 {
+  font-size: 30px;
+}
+.contenedorInfo .contenedorBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contenedorPrincipal2 {
+  display: flex;
+  align-items: center;
+}
+.contenedorPrincipal2 .contenedorInfo2 {
+  flex: 1;
+}
+.contenedorPrincipal2 .contenedorBtn2 {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.contenedorInfo2 p {
+  align-items: center;
+  text-align: center;
+  font-size: 60px;
+}
+.contenedorInfo2 h4 {
+  text-align: center;
+  font-size: 30px;
+}
+.contenedorInfo2 .contenedorBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.imgMaria {
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 30px;
+  width: 600px;
+  height: 750px;
+}
+
+.contenedorPrincipal3 {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.contenedorImgModelo {
+  flex: 1;
+}
+
+.contenedorInfo3 {
+  flex: 1;
+  text-align: center;
+  margin-right: 200px;
+}
+.contenedorInfo3 p {
+  align-items: center;
+  text-align: center;
+  font-size: 60px;
+}
+.contenedorInfo3 h4 {
+  text-align: center;
+  font-size: 30px;
+}
+.contenedorInfo3 .contenedorBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.imgLit {
+  object-fit: cover;
+  border-radius: 10px;
+  margin-left: 30px;
+  width: 600px;
+  height: 750px;
 }
 
 .contact-form {
