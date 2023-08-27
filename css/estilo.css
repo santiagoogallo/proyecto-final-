@@ -532,15 +532,17 @@ main .card {
 .contenedorPrincipal3 {
   display: flex;
   align-items: center;
+}
+.contenedorPrincipal3 .contenedorImgModelo {
   flex: 1;
 }
-
-.contenedorImgModelo {
+.contenedorPrincipal3 .contenedorInfo3 {
   flex: 1;
+  text-align: center;
+  margin-right: 200px;
 }
 
 .contenedorInfo3 {
-  flex: 1;
   text-align: center;
   margin-right: 200px;
 }
@@ -564,6 +566,15 @@ main .card {
   object-fit: cover;
   border-radius: 10px;
   margin-left: 30px;
+  width: 600px;
+  height: 750px;
+}
+
+.imgCazzu {
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 30px;
+  margin-bottom: 30px;
   width: 600px;
   height: 750px;
 }
