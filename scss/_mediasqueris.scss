@@ -263,7 +263,6 @@
     .imgMaria {
         max-width: 400px;
         height: 400px;
-        flex-direction: flex-end;
     }
 }
 
@@ -274,9 +273,11 @@
     }
 }
 
+
 @media screen and (max-width: 730px) {
     .contenedorPrincipal2 {
         flex-direction: column;
+        text-align: right;
     }
 
     .contenedorInfo2 {
@@ -316,10 +317,6 @@
     .imgCazzu {
         max-width: 400px;
         height: 400px;
-    }
-
-    .contenedorInfo2 {
-        max-width: 300px;
     }
 }
 

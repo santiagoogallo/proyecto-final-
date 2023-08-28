@@ -469,6 +469,7 @@ main .card {
 }
 .contenedorPrincipal .contenedorInfo {
   text-align: center;
+  align-items: center;
 }
 
 .contenedorInfo h4,
@@ -857,7 +858,6 @@ main .card {
   .imgMaria {
     max-width: 400px;
     height: 400px;
-    flex-direction: flex-end;
   }
 }
 @media screen and (max-width: 730px) {
@@ -869,6 +869,7 @@ main .card {
 @media screen and (max-width: 730px) {
   .contenedorPrincipal2 {
     flex-direction: column;
+    text-align: right;
   }
   .contenedorInfo2 {
     place-items: center;
@@ -900,9 +901,6 @@ main .card {
   .imgCazzu {
     max-width: 400px;
     height: 400px;
-  }
-  .contenedorInfo2 {
-    max-width: 300px;
   }
 }
 @media screen and (max-width: 730px) {
