@@ -469,7 +469,6 @@ main .card {
 }
 .contenedorPrincipal .contenedorInfo {
   text-align: center;
-  margin-right: 200px;
 }
 
 .contenedorInfo h4,
@@ -529,17 +528,23 @@ main .card {
   height: 750px;
 }
 
-.contenedorPrincipal3 {
+.contenedorPirncipal3 {
   display: flex;
   align-items: center;
 }
-.contenedorPrincipal3 .contenedorImgModelo {
+.contenedorPirncipal3 .contenedorImgModelo {
+  display: flex;
   flex: 1;
 }
-.contenedorPrincipal3 .contenedorInfo3 {
-  flex: 1;
+.contenedorPirncipal3 .imgModelo {
+  border-radius: 10px;
+  margin-left: 30px;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+.contenedorPirncipal3 .contenedorInfo3 {
   text-align: center;
-  margin-right: 200px;
 }
 
 .contenedorInfo3 {
@@ -568,6 +573,7 @@ main .card {
   margin-left: 30px;
   width: 600px;
   height: 750px;
+  padding: 0;
 }
 
 .imgCazzu {
@@ -821,6 +827,121 @@ main .card {
   }
   .contenedorCatalogo .parrafoCatalogo {
     margin-left: 20px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .contenedorInfo {
+    width: 300px;
+  }
+  .imgModelo {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .contenedorPrincipal {
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .contenedorInfo {
+    place-items: center;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .imgDuki {
+    width: 400px;
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .imgMaria {
+    max-width: 400px;
+    height: 400px;
+    flex-direction: flex-end;
+  }
+}
+@media screen and (max-width: 730px) {
+  .imgMaria {
+    max-width: 400px;
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .contenedorPrincipal2 {
+    flex-direction: column;
+  }
+  .contenedorInfo2 {
+    place-items: center;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .contenedorInfo3 {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .contenedorPirncipal3 {
+    flex-direction: column;
+  }
+  .contenedorInfo3 {
+    place-items: center;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .imgLit {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .imgCazzu {
+    max-width: 400px;
+    height: 400px;
+  }
+  .contenedorInfo2 {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .imgCazzu {
+    max-width: 300px;
+    height: 300px;
+    margin: 15px;
+  }
+  .contenedorInfo2 {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contenedorSeccionArtistas {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contenedorInfo {
+    place-items: center;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .contenedorPrincipal {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .imgMaria {
+    width: 300px;
+  }
+  .imgDuki {
+    width: 300px;
+  }
+  .imgCazzu {
+    width: 300px;
+  }
+  .imgLit {
+    width: 300px;
   }
 }
 footer {

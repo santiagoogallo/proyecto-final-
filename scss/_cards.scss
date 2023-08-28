@@ -280,7 +280,6 @@ main {
 
     .contenedorInfo {
         text-align: center;
-        margin-right: 200px;
     }
 }
 
@@ -349,18 +348,26 @@ main {
     height: 750px;
 }
 
-.contenedorPrincipal3 {
+.contenedorPirncipal3 {
     display: flex;
     align-items: center;
 
+
     .contenedorImgModelo {
+        display: flex;
         flex: 1;
     }
 
+    .imgModelo {
+        border-radius: 10px;
+        margin-left: 30px;
+        object-fit: cover;
+        max-width: 100%;
+        height: auto;
+    }
+
     .contenedorInfo3 {
-        flex: 1;
         text-align: center;
-        margin-right: 200px;
     }
 }
 
@@ -393,6 +400,7 @@ main {
     margin-left: 30px;
     width: 600px;
     height: 750px;
+    padding: 0;
 }
 
 .imgCazzu {
